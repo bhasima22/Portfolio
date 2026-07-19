@@ -1,162 +1,848 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Edisha Bhasima - Personal Portfolio</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Portfolio of Edisha Bhasima, an aspiring graphic designer and BIT student.">
+
+    <title>Edisha Bhasima | Graphic Designer</title>
+
+    <link rel="stylesheet"
+          href="style.css">
 </head>
+
+
 <body>
 
-<header>
-  <h1>Edisha Bhasima</h1>
-  <p>Student &amp; Aspiring Designer</p>
-  <nav aria-label="Primary navigation">
-    <ul>
-      <li><a href="#about">About &amp; Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <!-- =========================
+         HEADER AND NAVIGATION
+    ========================== -->
 
-<main>
+    <header class="site-header">
 
-  <section id="about">
-    <h2>About Me</h2>
-    <img src="profile.jpeg" alt="Portrait photo of Edisha Bhasima" width="200" height="200">
-    <p>
-      I am a Bachelor of Information Technology (BIT) student with a strong
-      interest in design and creativity. I enjoy developing attractive
-      websites, creating visual content, and learning new technologies to
-      improve my skills.
-    </p>
+        <nav class="navbar">
 
-    <h3>Personal Details</h3>
-    <dl>
-      <dt>Address</dt>
-      <dd>Bhaktapur, Nepal</dd>
+            <a href="#home"
+               class="logo">
+                ED<span>.</span>
+            </a>
 
-      <dt>Email</dt>
-      <dd><a href="mailto:ebhasima@gmail.com">ebhasima@gmail.com</a></dd>
 
-      <dt>Profession</dt>
-      <dd>Student &amp; Aspiring Designer</dd>
-    </dl>
+            <ul class="nav-links">
 
-    <h3>Technical Skills</h3>
-    <dl>
-      <dt>HTML5</dt>
-      <dd>Writing semantic, accessible markup using elements such as
-        &lt;header&gt;, &lt;main&gt;, &lt;section&gt;, and &lt;article&gt;.</dd>
+                <li>
+                    <a href="#home">
+                        Home
+                    </a>
+                </li>
 
-      <dt>CSS3</dt>
-      <dd>Styling responsive, visually attractive layouts with Flexbox, Grid,
-        and media queries.</dd>
+                <li>
+                    <a href="#about">
+                        About
+                    </a>
+                </li>
 
-      <dt>UI/UX Design</dt>
-      <dd>Designing clean, user-friendly interfaces and wireframes using
-        tools such as Figma and Adobe XD.</dd>
+                <li>
+                    <a href="#education">
+                        Education
+                    </a>
+                </li>
 
-      <dt>Graphic Design</dt>
-      <dd>Creating visual content and branding assets with tools such as
-        Canva and Adobe Photoshop.</dd>
+                <li>
+                    <a href="#skills">
+                        Skills
+                    </a>
+                </li>
 
-      <dt>JavaScript</dt>
-      <dd>Building interactive client-side features and working with the DOM.</dd>
+                <li>
+                    <a href="#projects">
+                        Projects
+                    </a>
+                </li>
 
-      <dt>Git &amp; GitHub</dt>
-      <dd>Version control, branching workflows, and collaborative
-        open-source contribution.</dd>
-    </dl>
-  </section>
+                <li>
+                    <a href="#contact">
+                        Contact
+                    </a>
+                </li>
 
-  <section id="projects">
-    <h2>Projects</h2>
+            </ul>
 
-    <article>
-      <h3>Café Website Redesign</h3>
-      <p>
-        A responsive website concept for a local café, focused on clean
-        typography, an inviting visual layout, and an easy-to-navigate menu
-        page. Built with semantic HTML5 and a custom CSS design system,
-        including a mobile-friendly layout and an online reservation form.
-      </p>
-      <p>
-        Repository:
-        <a href="https://github.com/ebhasima/cafe-website-redesign">
-          github.com/ebhasima/cafe-website-redesign
-        </a>
-      </p>
-    </article>
 
-    <article>
-      <h3>Brand Identity &amp; Poster Series</h3>
-      <p>
-        A branding project created for a student club, including a logo,
-        color palette, typography guide, and a set of promotional posters
-        designed in Canva and Adobe Photoshop. Delivered as a full brand
-        style guide alongside print-ready assets.
-      </p>
-      <p>
-        Repository:
-        <a href="https://github.com/ebhasima/brand-identity-posters">
-          github.com/ebhasima/brand-identity-posters
-        </a>
-      </p>
-    </article>
+            <a href="#contact"
+               class="contact-button">
+                Let's Talk
+            </a>
 
-    <article>
-      <h3>Mobile App UI Concept</h3>
-      <p>
-        A set of high-fidelity mobile app screens designed in Figma for a
-        fictional recipe-sharing app, including onboarding, search, and
-        recipe detail views. Focused on accessible color contrast, clear
-        visual hierarchy, and a consistent component library.
-      </p>
-      <p>
-        Repository:
-        <a href="https://github.com/ebhasima/recipe-app-ui-concept">
-          github.com/ebhasima/recipe-app-ui-concept
-        </a>
-      </p>
-    </article>
+        </nav>
 
-  </section>
+    </header>
 
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form action="https://example.com/submit-contact-form" method="post">
 
-      <p>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required>
-      </p>
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
 
-      <p>
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required>
-      </p>
+    <main>
 
-      <p>
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="6" cols="40" required></textarea>
-      </p>
 
-      <p>
-        <button type="submit">Send Message</button>
-      </p>
+        <!-- =========================
+             HERO SECTION
+        ========================== -->
 
-    </form>
-  </section>
+        <section id="home"
+                 class="hero-section">
 
-</main>
 
-<footer>
-  <p>&copy; 2026 Edisha Bhasima. All rights reserved.</p>
-  <p>
-    <a href="#about">Back to top</a>
-  </p>
-</footer>
+            <div class="hero-content">
+
+                <p class="intro-label">
+                    HELLO, I'M
+                </p>
+
+
+                <h1>
+                    Edisha
+                    <span>Bhasima</span>
+                </h1>
+
+
+                <h2>
+                    Aspiring Graphic Designer
+                </h2>
+
+
+                <p class="hero-description">
+
+                    I am a BIT student with a passion for
+                    graphic design, creativity, and exploring
+                    new ideas through visual experiences.
+
+                </p>
+
+
+                <div class="hero-buttons">
+
+                    <a href="#projects"
+                       class="primary-button">
+                        Explore My Work
+                    </a>
+
+
+                    <a href="#about"
+                       class="outline-button">
+                        About Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-image-wrapper">
+
+                <div class="image-background"></div>
+
+
+                <img src="profile.jpg.jpeg"
+                     alt="Edisha Bhasima"
+                     class="profile-image">
+
+
+                <div class="image-caption">
+
+                    <span>CREATIVE</span>
+                    <span>CURIOUS</span>
+                    <span>CREATING</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section id="about"
+                 class="about-section">
+
+
+            <div class="section-title">
+
+                <p class="section-label">
+                    01 / ABOUT ME
+                </p>
+
+
+                <h2>
+                    Turning ideas<br>
+                    into <span>visual stories.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="about-grid">
+
+
+                <div class="about-text">
+
+                    <p>
+
+                        I am Edisha Bhasima, a creative and motivated
+                        Bachelor of Information Technology student with
+                        a strong interest in graphic design and creativity.
+
+                    </p>
+
+
+                    <p>
+
+                        I enjoy exploring new ideas and learning how
+                        creativity and technology can be combined to
+                        create meaningful visual experiences.
+
+                    </p>
+
+
+                    <p>
+
+                        As someone beginning my journey in the creative
+                        field, I am continuously learning, experimenting,
+                        and developing my skills in design and technology.
+
+                    </p>
+
+                </div>
+
+
+                <div class="about-highlight">
+
+                    <div class="highlight-number">
+                        01
+                    </div>
+
+
+                    <h3>
+                        Creative
+                        thinking.
+                    </h3>
+
+
+                    <p>
+
+                        Exploring new perspectives,
+                        concepts, and visual ideas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION SECTION
+        ========================== -->
+
+        <section id="education"
+                 class="education-section">
+
+
+            <div class="section-title">
+
+                <p class="section-label">
+                    02 / EDUCATION
+                </p>
+
+
+                <h2>
+                    My learning<br>
+                    <span>journey.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="education-timeline">
+
+
+                <article class="education-card">
+
+                    <span class="education-number">
+                        01
+                    </span>
+
+
+                    <div>
+
+                        <p class="education-status">
+                            COMPLETED
+                        </p>
+
+
+                        <h3>
+                            Secondary Education Examination
+                        </h3>
+
+
+                        <p>
+                            KEBS
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="education-card">
+
+                    <span class="education-number">
+                        02
+                    </span>
+
+
+                    <div>
+
+                        <p class="education-status">
+                            COMPLETED
+                        </p>
+
+
+                        <h3>
+                            Higher Secondary Education
+                        </h3>
+
+
+                        <p>
+                            Himalayan WhiteHouse
+                            International College (HWHIC)
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="education-card active-education">
+
+                    <span class="education-number">
+                        03
+                    </span>
+
+
+                    <div>
+
+                        <p class="education-status">
+                            CURRENTLY STUDYING
+                        </p>
+
+
+                        <h3>
+                            Bachelor of Information Technology
+                        </h3>
+
+
+                        <p>
+                            Model Institute of Technology (MIT)
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS SECTION
+        ========================== -->
+
+        <section id="skills"
+                 class="skills-section">
+
+
+            <div class="section-title">
+
+                <p class="section-label">
+                    03 / SKILLS
+                </p>
+
+
+                <h2>
+                    Skills that<br>
+                    <span>shape my work.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <article class="skill-card">
+
+                    <span>
+                        01
+                    </span>
+
+
+                    <h3>
+                        Creativity
+                    </h3>
+
+
+                    <p>
+
+                        Developing fresh ideas and
+                        approaching challenges from
+                        different perspectives.
+
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span>
+                        02
+                    </span>
+
+
+                    <h3>
+                        Leadership
+                    </h3>
+
+
+                    <p>
+
+                        Taking initiative, supporting
+                        others, and working toward
+                        shared goals.
+
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span>
+                        03
+                    </span>
+
+
+                    <h3>
+                        Management
+                    </h3>
+
+
+                    <p>
+
+                        Organizing tasks and managing
+                        responsibilities effectively.
+
+                    </p>
+
+                </article>
+
+
+                <article class="skill-card">
+
+                    <span>
+                        04
+                    </span>
+
+
+                    <h3>
+                        Teamwork
+                    </h3>
+
+
+                    <p>
+
+                        Collaborating with others and
+                        contributing positively to a team.
+
+                    </p>
+
+                </article>
+
+            </div>
+
+
+            <div class="tools-section">
+
+                <p class="tools-title">
+                    DESIGN TOOLS I AM EXPLORING
+                </p>
+
+
+                <div class="tools-list">
+
+                    <span>
+                        Adobe Photoshop
+                    </span>
+
+                    <span>
+                        Adobe Illustrator
+                    </span>
+
+                    <span>
+                        Canva
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS SECTION
+        ========================== -->
+
+        <section id="projects"
+                 class="projects-section">
+
+
+            <div class="section-title">
+
+                <p class="section-label">
+                    04 / EXPLORING IDEAS
+                </p>
+
+
+                <h2>
+                    My creative<br>
+                    <span>journey begins.</span>
+                </h2>
+
+
+                <p class="section-description">
+
+                    As a fresher, I am currently building my
+                    skills through academic work, personal
+                    exploration, and creative experimentation.
+
+                </p>
+
+            </div>
+
+
+            <div class="projects-grid">
+
+
+                <article class="project-card project-dark">
+
+                    <div class="project-top">
+
+                        <span>
+                            01
+                        </span>
+
+                        <span>
+                            WEB DESIGN
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Personal
+                            Portfolio
+                        </h3>
+
+
+                        <p>
+
+                            A responsive personal portfolio
+                            website designed and developed
+                            using HTML and CSS.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card project-accent">
+
+                    <div class="project-top">
+
+                        <span>
+                            02
+                        </span>
+
+                        <span>
+                            CREATIVE EXPLORATION
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Exploring
+                            Visual Ideas
+                        </h3>
+
+
+                        <p>
+
+                            Personal exploration of creative
+                            concepts, visual composition,
+                            and graphic design ideas.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <article class="project-card project-light">
+
+                    <div class="project-top">
+
+                        <span>
+                            03
+                        </span>
+
+                        <span>
+                            ACADEMIC
+                        </span>
+
+                    </div>
+
+
+                    <div>
+
+                        <h3>
+                            Academic
+                            Projects
+                        </h3>
+
+
+                        <p>
+
+                            Academic projects developed
+                            during my Bachelor of Information
+                            Technology studies.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             INTERESTS SECTION
+        ========================== -->
+
+        <section class="interests-section">
+
+
+            <div class="interest-intro">
+
+                <p class="section-label">
+                    05 / INTERESTS
+                </p>
+
+
+                <h2>
+                    Always curious.<br>
+                    Always <span>exploring.</span>
+                </h2>
+
+            </div>
+
+
+            <div class="interest-list">
+
+                <div class="interest-item">
+
+                    <span>
+                        01
+                    </span>
+
+                    <h3>
+                        Travelling
+                    </h3>
+
+                </div>
+
+
+                <div class="interest-item">
+
+                    <span>
+                        02
+                    </span>
+
+                    <h3>
+                        Exploring New Ideas
+                    </h3>
+
+                </div>
+
+
+                <div class="interest-item">
+
+                    <span>
+                        03
+                    </span>
+
+                    <h3>
+                        Graphic Design
+                    </h3>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT SECTION
+        ========================== -->
+
+        <section id="contact"
+                 class="contact-section">
+
+
+            <div class="contact-content">
+
+                <p class="section-label">
+                    06 / CONTACT
+                </p>
+
+
+                <h2>
+                    Let's create<br>
+                    something <span>meaningful.</span>
+                </h2>
+
+
+                <p>
+
+                    I am always open to learning,
+                    exploring new ideas, and connecting
+                    with creative opportunities.
+
+                </p>
+
+            </div>
+
+
+            <div class="contact-details">
+
+
+                <div class="contact-item">
+
+                    <span>
+                        EMAIL
+                    </span>
+
+
+                    <a href="mailto:ebhasima@gmail.com">
+
+                        ebhasima@gmail.com
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        PHONE
+                    </span>
+
+
+                    <a href="tel:9745*****">
+
+                        9812345678
+
+                    </a>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>
+                        LOCATION
+                    </span>
+
+
+                    <p>
+                        Madhyapur Thimi
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+
+        <div class="footer-logo">
+
+            ED<span>.</span>
+
+        </div>
+
+
+        <p>
+
+            Designed and developed by
+            Edisha Bhasima.
+
+        </p>
+
+
+        <p>
+
+            © 2026 Edisha Bhasima
+
+        </p>
+
+    </footer>
 
 </body>
+
 </html>
