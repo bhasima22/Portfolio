@@ -1,0 +1,1379 @@
+/* =====================================================
+   EDisha BHASIMA PORTFOLIO
+   External Stylesheet
+   ===================================================== */
+
+
+/* =====================================================
+   1. ROOT VARIABLES
+   ===================================================== */
+
+:root {
+
+    --dark: #171717;
+
+    --dark-soft: #242424;
+
+    --cream: #f5f1e9;
+
+    --cream-dark: #e6dfd3;
+
+    --lime: #d9ff3f;
+
+    --green: #819900;
+
+    --white: #ffffff;
+
+    --gray: #77736c;
+
+    --border: #d2cbc0;
+
+}
+
+
+/* =====================================================
+   2. GENERAL RESET
+   ===================================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+html {
+
+    scroll-behavior: smooth;
+
+}
+
+
+body {
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-color: var(--cream);
+
+    color: var(--dark);
+
+    line-height: 1.6;
+
+}
+
+
+img {
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+a {
+
+    text-decoration: none;
+
+    color: inherit;
+
+}
+
+
+/* =====================================================
+   3. HEADER AND NAVIGATION
+   ===================================================== */
+
+.site-header {
+
+    padding: 25px 7%;
+
+    border-bottom: 1px solid var(--border);
+
+    background-color: var(--cream);
+
+}
+
+
+.navbar {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+}
+
+
+.logo {
+
+    font-size: 1.7rem;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+}
+
+
+.logo span {
+
+    color: var(--green);
+
+}
+
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    list-style: none;
+
+}
+
+
+.nav-links a {
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    transition: color 0.3s ease;
+
+}
+
+
+.nav-links a:hover {
+
+    color: var(--green);
+
+}
+
+
+.contact-button {
+
+    padding: 12px 22px;
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.contact-button:hover {
+
+    background-color: var(--lime);
+
+    color: var(--dark);
+
+}
+
+
+/* =====================================================
+   4. HERO SECTION
+   ===================================================== */
+
+.hero-section {
+
+    min-height: 90vh;
+
+    padding: 80px 7%;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    align-items: center;
+
+    gap: 60px;
+
+    overflow: hidden;
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+}
+
+
+.intro-label,
+
+.section-label {
+
+    margin-bottom: 20px;
+
+    color: var(--green);
+
+    font-size: 0.75rem;
+
+    font-weight: bold;
+
+    letter-spacing: 3px;
+
+}
+
+
+.hero-content h1 {
+
+    max-width: 700px;
+
+    font-size: clamp(4rem, 8vw, 8rem);
+
+    line-height: 0.88;
+
+    letter-spacing: -6px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.hero-content h1 span {
+
+    color: var(--green);
+
+}
+
+
+.hero-content h2 {
+
+    margin-bottom: 25px;
+
+    font-size: 1.3rem;
+
+    font-weight: normal;
+
+}
+
+
+.hero-description {
+
+    max-width: 500px;
+
+    color: var(--gray);
+
+    font-size: 1.05rem;
+
+    margin-bottom: 35px;
+
+}
+
+
+.hero-buttons {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.primary-button,
+
+.outline-button {
+
+    padding: 15px 25px;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.primary-button {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+}
+
+
+.primary-button:hover {
+
+    background-color: var(--green);
+
+}
+
+
+.outline-button {
+
+    border: 1px solid var(--dark);
+
+}
+
+
+.outline-button:hover {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+}
+
+
+/* =====================================================
+   5. HERO IMAGE
+   ===================================================== */
+
+.hero-image-wrapper {
+
+    position: relative;
+
+    min-height: 550px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+
+.image-background {
+
+    position: absolute;
+
+    width: 420px;
+
+    height: 420px;
+
+    background-color: var(--lime);
+
+    border-radius: 50%;
+
+}
+
+
+.profile-image {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 350px;
+
+    height: 470px;
+
+    object-fit: cover;
+
+    border-radius: 190px 190px 0 0;
+
+    filter: grayscale(20%);
+
+}
+
+
+.image-caption {
+
+    position: absolute;
+
+    right: 0;
+
+    bottom: 40px;
+
+    z-index: 3;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 15px 18px;
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    font-size: 0.65rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+/* =====================================================
+   6. COMMON SECTION STYLES
+   ===================================================== */
+
+.about-section,
+
+.education-section,
+
+.skills-section,
+
+.projects-section,
+
+.interests-section,
+
+.contact-section {
+
+    padding: 120px 7%;
+
+}
+
+
+.section-title {
+
+    margin-bottom: 70px;
+
+}
+
+
+.section-title h2,
+
+.contact-content h2,
+
+.interest-intro h2 {
+
+    font-size: clamp(3rem, 6vw, 6rem);
+
+    line-height: 0.95;
+
+    letter-spacing: -4px;
+
+}
+
+
+.section-title h2 span,
+
+.contact-content h2 span,
+
+.interest-intro h2 span {
+
+    color: var(--green);
+
+}
+
+
+.section-description {
+
+    max-width: 500px;
+
+    margin-top: 30px;
+
+    color: var(--gray);
+
+}
+
+
+/* =====================================================
+   7. ABOUT SECTION
+   ===================================================== */
+
+.about-section {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+}
+
+
+.about-section .section-label {
+
+    color: var(--lime);
+
+}
+
+
+.about-grid {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+}
+
+
+.about-text {
+
+    max-width: 600px;
+
+}
+
+
+.about-text p {
+
+    margin-bottom: 25px;
+
+    color: #c7c7c7;
+
+    font-size: 1.05rem;
+
+}
+
+
+.about-highlight {
+
+    min-height: 300px;
+
+    padding: 35px;
+
+    border: 1px solid #555;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+}
+
+
+.highlight-number {
+
+    color: var(--lime);
+
+    font-size: 2rem;
+
+    font-weight: bold;
+
+}
+
+
+.about-highlight h3 {
+
+    max-width: 300px;
+
+    font-size: 3rem;
+
+    line-height: 1;
+
+}
+
+
+.about-highlight p {
+
+    color: #bdbdbd;
+
+}
+
+
+/* =====================================================
+   8. EDUCATION SECTION
+   ===================================================== */
+
+.education-section {
+
+    background-color: var(--cream-dark);
+
+}
+
+
+.education-timeline {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.education-card {
+
+    display: grid;
+
+    grid-template-columns: 100px 1fr;
+
+    gap: 30px;
+
+    padding: 30px 0;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.education-card:last-child {
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.education-number {
+
+    color: var(--green);
+
+    font-size: 1.8rem;
+
+    font-weight: bold;
+
+}
+
+
+.education-status {
+
+    margin-bottom: 10px;
+
+    color: var(--green);
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.education-card h3 {
+
+    margin-bottom: 8px;
+
+    font-size: 1.8rem;
+
+}
+
+
+.education-card p:last-child {
+
+    color: var(--gray);
+
+}
+
+
+.active-education {
+
+    background-color: var(--lime);
+
+    padding-left: 25px;
+
+    padding-right: 25px;
+
+}
+
+
+.active-education .education-status {
+
+    color: var(--dark);
+
+}
+
+
+/* =====================================================
+   9. SKILLS SECTION
+   ===================================================== */
+
+.skills-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+}
+
+
+.skill-card {
+
+    min-height: 280px;
+
+    padding: 25px 0;
+
+    border-top: 2px solid var(--dark);
+
+}
+
+
+.skill-card > span {
+
+    color: var(--green);
+
+    font-weight: bold;
+
+}
+
+
+.skill-card h3 {
+
+    margin: 50px 0 15px;
+
+    font-size: 1.7rem;
+
+}
+
+
+.skill-card p {
+
+    color: var(--gray);
+
+}
+
+
+/* =====================================================
+   10. DESIGN TOOLS
+   ===================================================== */
+
+.tools-section {
+
+    margin-top: 80px;
+
+    padding-top: 30px;
+
+    border-top: 1px solid var(--border);
+
+}
+
+
+.tools-title {
+
+    margin-bottom: 25px;
+
+    color: var(--gray);
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.tools-list {
+
+    display: flex;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.tools-list span {
+
+    padding: 12px 20px;
+
+    border: 1px solid var(--dark);
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+
+}
+
+
+.tools-list span:hover {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+}
+
+
+/* =====================================================
+   11. PROJECTS SECTION
+   ===================================================== */
+
+.projects-section {
+
+    background-color: var(--cream-dark);
+
+}
+
+
+.projects-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+
+}
+
+
+.project-card {
+
+    min-height: 460px;
+
+    padding: 25px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: space-between;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+.project-card:hover {
+
+    transform: translateY(-10px);
+
+}
+
+
+.project-dark {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+}
+
+
+.project-accent {
+
+    background-color: var(--lime);
+
+}
+
+
+.project-light {
+
+    background-color: var(--white);
+
+}
+
+
+.project-top {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 15px;
+
+    font-size: 0.65rem;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+}
+
+
+.project-card h3 {
+
+    max-width: 300px;
+
+    margin-bottom: 20px;
+
+    font-size: 2.7rem;
+
+    line-height: 0.95;
+
+}
+
+
+.project-card p {
+
+    max-width: 300px;
+
+    color: inherit;
+
+}
+
+
+/* =====================================================
+   12. INTERESTS SECTION
+   ===================================================== */
+
+.interests-section {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 80px;
+
+}
+
+
+.interest-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.interest-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.interest-item span {
+
+    color: var(--green);
+
+    font-weight: bold;
+
+}
+
+
+.interest-item h3 {
+
+    font-size: 1.5rem;
+
+}
+
+
+/* =====================================================
+   13. CONTACT SECTION
+   ===================================================== */
+
+.contact-section {
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+
+}
+
+
+.contact-section .section-label {
+
+    color: var(--lime);
+
+}
+
+
+.contact-content > p:last-child {
+
+    max-width: 450px;
+
+    margin-top: 30px;
+
+    color: #bdbdbd;
+
+}
+
+
+.contact-details {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+}
+
+
+.contact-item {
+
+    padding: 25px 0;
+
+    border-bottom: 1px solid #555;
+
+}
+
+
+.contact-item span {
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--lime);
+
+    font-size: 0.7rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+}
+
+
+.contact-item a,
+
+.contact-item p {
+
+    color: var(--white);
+
+    font-size: 1.1rem;
+
+}
+
+
+.contact-item a:hover {
+
+    color: var(--lime);
+
+}
+
+
+/* =====================================================
+   14. FOOTER
+   ===================================================== */
+
+.site-footer {
+
+    padding: 35px 7%;
+
+    background-color: var(--dark);
+
+    color: var(--white);
+
+    border-top: 1px solid #444;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+}
+
+
+.footer-logo {
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+}
+
+
+.footer-logo span {
+
+    color: var(--lime);
+
+}
+
+
+.site-footer p {
+
+    color: #aaa;
+
+    font-size: 0.8rem;
+
+}
+
+
+/* =====================================================
+   15. TABLET RESPONSIVE DESIGN
+   ===================================================== */
+
+@media screen and (max-width: 1000px) {
+
+
+    .nav-links {
+
+        gap: 15px;
+
+    }
+
+
+    .hero-section {
+
+        grid-template-columns: 1fr;
+
+        text-align: center;
+
+    }
+
+
+    .hero-description {
+
+        margin-left: auto;
+
+        margin-right: auto;
+
+    }
+
+
+    .hero-buttons {
+
+        justify-content: center;
+
+    }
+
+
+    .about-grid,
+
+    .interests-section,
+
+    .contact-section {
+
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+    }
+
+
+    .skills-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+    .projects-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+/* =====================================================
+   16. MOBILE RESPONSIVE DESIGN
+   ===================================================== */
+
+@media screen and (max-width: 600px) {
+
+
+    .site-header {
+
+        padding: 20px;
+
+    }
+
+
+    .navbar {
+
+        flex-wrap: wrap;
+
+    }
+
+
+    .nav-links {
+
+        order: 3;
+
+        width: 100%;
+
+        justify-content: space-between;
+
+        gap: 8px;
+
+    }
+
+
+    .nav-links a {
+
+        font-size: 0.65rem;
+
+    }
+
+
+    .contact-button {
+
+        padding: 9px 13px;
+
+        font-size: 0.7rem;
+
+    }
+
+
+    .hero-section,
+
+    .about-section,
+
+    .education-section,
+
+    .skills-section,
+
+    .projects-section,
+
+    .interests-section,
+
+    .contact-section {
+
+        padding: 80px 20px;
+
+    }
+
+
+    .hero-content h1 {
+
+        font-size: 4.5rem;
+
+        letter-spacing: -4px;
+
+    }
+
+
+    .hero-content h2 {
+
+        font-size: 1.1rem;
+
+    }
+
+
+    .hero-image-wrapper {
+
+        min-height: 400px;
+
+    }
+
+
+    .image-background {
+
+        width: 280px;
+
+        height: 280px;
+
+    }
+
+
+    .profile-image {
+
+        width: 250px;
+
+        height: 350px;
+
+    }
+
+
+    .image-caption {
+
+        right: 0;
+
+        bottom: 20px;
+
+    }
+
+
+    .section-title h2,
+
+    .contact-content h2,
+
+    .interest-intro h2 {
+
+        font-size: 3.5rem;
+
+        letter-spacing: -2px;
+
+    }
+
+
+    .education-card {
+
+        grid-template-columns: 50px 1fr;
+
+        gap: 15px;
+
+    }
+
+
+    .education-card h3 {
+
+        font-size: 1.4rem;
+
+    }
+
+
+    .active-education {
+
+        padding-left: 15px;
+
+        padding-right: 15px;
+
+    }
+
+
+    .skills-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .skill-card {
+
+        min-height: auto;
+
+        padding: 25px 0;
+
+    }
+
+
+    .project-card {
+
+        min-height: 400px;
+
+    }
+
+
+    .tools-list {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+
+    .site-footer {
+
+        padding: 30px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+}
