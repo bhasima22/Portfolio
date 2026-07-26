@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Edisha Bhasima | Graphic Designer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header class="site-header">
+        <nav class="navbar">
+            <h1 class="logo">Edisha Bhasima</h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#slider">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Home Section -->
+    <main>
+
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p class="subtitle">BIT Student & Aspiring Graphic Designer</p>
+
+                <h2>Creating Ideas Through Design</h2>
+
+                <p>
+                    Hello, I am Edisha Bhasima. I am a Bachelor of Information
+                    Technology student and an aspiring graphic designer interested
+                    in creativity, visual communication, and digital design.
+                </p>
+
+                <a href="#about" class="button">Explore My Portfolio</a>
+            </div>
+
+            <div class="hero-image">
+                <img src="images/profile.jpg" alt="Profile picture of Edisha Bhasima">
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+
+            <p>
+                I am currently studying Bachelor of Information Technology at
+                Model Institute of Technology. I am interested in graphic design,
+                creativity, travelling, and exploring new ideas.
+            </p>
+
+            <p>
+                My goal is to continue developing my technical and creative skills
+                while building a career in the field of design.
+            </p>
+        </section>
+
+
+        <!-- Skills Section -->
+        <section id="skills" class="content-section">
+            <h2>My Skills</h2>
+
+            <div class="skills-container">
+
+                <article class="skill-card">
+                    <h3>Creativity</h3>
+                    <p>
+                        Developing creative ideas and visual concepts for
+                        digital designs.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Teamwork</h3>
+                    <p>
+                        Collaborating with others to complete projects and
+                        achieve shared goals.
+                    </p>
+                </article>
+
+                <article class="skill-card">
+                    <h3>Management</h3>
+                    <p>
+                        Organising tasks and managing time effectively during
+                        academic and creative projects.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Projects Section -->
+        <section id="projects" class="content-section">
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <article class="project-card">
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        A responsive personal portfolio website created using
+                        HTML and CSS to present my education, skills, interests,
+                        and projects.
+                    </p>
+
+                    <a href="https://github.com/bhasima22/Portfolio"
+                       target="_blank">
+                        View Repository
+                    </a>
+                </article>
+
+                <article class="project-card">
+                    <h3>Creative Design Exploration</h3>
+
+                    <p>
+                        A collection of creative academic and personal design
+                        explorations developed to improve my visual design skills.
+                    </p>
+                </article>
+
+            </div>
+        </section>
+
+
+        <!-- Image Slider Section -->
+        <section id="slider" class="slider-section">
+
+            <h2>My Image Gallery</h2>
+
+            <div class="image-slider">
+
+                <div class="slider-viewport">
+
+                    <div class="slider-track">
+
+                        <div class="slide">
+                            <img src="image1.jpg.jpeg"
+                                 alt="Creative design image 1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image2.jpg.jpeg"
+                                 alt="Creative design image 2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="image3.jpg.jpeg"
+                                 alt="Creative design image 3">
+                        </div>
+
+                    </div>
+
+                    <!-- Previous Button -->
+                    <button class="previous"
+                            aria-label="Previous image">
+                        &#10094;
+                    </button>
+
+                    <!-- Next Button -->
+                    <button class="next"
+                            aria-label="Next image">
+                        &#10095;
+                    </button>
+
+                </div>
+
+                <!-- JavaScript dynamically creates the dots here -->
+                <div class="slider-dots"></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+
+            <h2>Contact Me</h2>
+
+            <form class="contact-form">
+
+                <label for="name">Name:</label>
+                <input type="text"
+                       id="name"
+                       name="name"
+                       required>
+
+                <label for="email">Email:</label>
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <label for="message">Message:</label>
+                <textarea id="message"
+                          name="message"
+                          rows="5"
+                          required></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>
+            &copy; 2026 Edisha Bhasima. All rights reserved.
+        </p>
+    </footer>
+
+
+    <!-- JavaScript File -->
+    <script src="slider.js"></script>
+
+</body>
+</html>
